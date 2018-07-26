@@ -1,3 +1,11 @@
+" 편리하게 사용할수있도록 커스텀을 하였다.
+
+" 번들 생각보다 많긴하지만 이렇게 했을때 불편함없이 편리하게 쓰는것같다.
+
+
+
+
+
 "========= default variables setting =========
 set cindent
 set bg=dark
