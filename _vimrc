@@ -1,34 +1,36 @@
 "========= default variables setting =========
 set cindent
 set bg=dark
-set ruler		" È­¸é ¿ìÃø ÇÏ´Ü¿¡ ÇöÀç Ä¿¼­ÀÇ À§Ä¡(ÁÙ,Ä­)¸¦ º¸¿©ÁØ´Ù.
-set number		" ÁÙ	
+set ruler		" í™”ë©´ ìš°ì¸¡ í•˜ë‹¨ì— í˜„ì¬ ì»¤ì„œì˜ ìœ„ì¹˜(ì¤„,ì¹¸)ë¥¼ ë³´ì—¬ì¤€ë‹¤.
+set number		" ì¤„	
 set modifiable
 set hlsearch	" Highlight Search
-set ts=4		" tab stop - tab Å©±â
-set sw=4		" shift width - shift Å©±â Á¶Àı
-set sts=4		" soft tab stop - tab ÀÌµ¿ Å©±â
+set ts=4		" tab stop - tab í¬ê¸°
+set sw=4		" shift width - shift í¬ê¸° ì¡°ì ˆ
+set sts=4		" soft tab stop - tab ì´ë™ í¬ê¸°
 set incsearch
 set ignorecase
 set printoptions=portrait:n,wrap:n,duplex:off
 set ai                    " auto indent
-set ignorecase      " °Ë»ö½Ã ´ë¼Ò¹®ÀÚ ±¸º°ÇÏÁö¾ÊÀ½
+set ignorecase      " ê²€ìƒ‰ì‹œ ëŒ€ì†Œë¬¸ì êµ¬ë³„í•˜ì§€ì•ŠìŒ
 set cindent            " c style indent
 set si                    " smart indent
-set expandtab       " tab ´ë½Å ¶ç¾î¾²±â·Î
-set fileencodings=utf-8,euc-kr    " ÆÄÀÏÀÎÄÚµù Çü½Ä ÁöÁ¤
-set bs=indent,eol,start    " backspace Å° »ç¿ë °¡´É
-set title               " Á¦¸ñÀ» Ç¥½Ã
-set showmatch    " ¸ÅÄªµÇ´Â °ıÈ£¸¦ º¸¿©ÁÜ
+set expandtab       " tab ëŒ€ì‹  ë„ì–´ì“°ê¸°ë¡œ
+set fileencodings=utf-8,euc-kr    " íŒŒì¼ì¸ì½”ë”© í˜•ì‹ ì§€ì •
+set bs=indent,eol,start    " backspace í‚¤ ì‚¬ìš© ê°€ëŠ¥
+set title               " ì œëª©ì„ í‘œì‹œ
+set showmatch    " ë§¤ì¹­ë˜ëŠ” ê´„í˜¸ë¥¼ ë³´ì—¬ì¤Œ
 colorscheme torte 
-"set nowrap         " ÀÚµ¿ ÁÙ¹Ù²Ş ÇÏÁö ¾ÊÀ½
-set nobackup       "¹é¾÷ ÆÄÀÏ ¾È¸¸µé±â
-set wmnu           " tab ÀÚµ¿¿Ï¼º½Ã °¡´ÉÇÑ ¸ñ·ÏÀ» º¸¿©ÁÜ
-set history=1000    " ¸í·É¾î¿¡ ´ëÇÑ È÷½ºÅä¸®¸¦ 1000°³±îÁö
-set nocompatible   " ¹æÇâÅ°·Î ÀÌµ¿°¡´É
+"set nowrap         " ìë™ ì¤„ë°”ê¿ˆ í•˜ì§€ ì•ŠìŒ
+set nobackup       "ë°±ì—… íŒŒì¼ ì•ˆë§Œë“¤ê¸°
+set wmnu           " tab ìë™ì™„ì„±ì‹œ ê°€ëŠ¥í•œ ëª©ë¡ì„ ë³´ì—¬ì¤Œ
+set history=1000    " ëª…ë ¹ì–´ì— ëŒ€í•œ íˆìŠ¤í† ë¦¬ë¥¼ 1000ê°œê¹Œì§€
+set nocompatible   " ë°©í–¥í‚¤ë¡œ ì´ë™ê°€ëŠ¥
 highlight Comment term=bold cterm=bold ctermtg=2 
-""ÁÖ¼® »ö±òº¯°æ"
+""ì£¼ì„ ìƒ‰ê¹”ë³€ê²½"
 
+ set guifont=Bitstream_Vera_Sans_Mono:h18:cHANGEUL
+"í°íŠ¸"
 syntax on
 
 
@@ -60,11 +62,11 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-Bundle 'vim-airline/vim-airline' "»óÅÂ¹Ù°£Áö
-"Bundle 'airblade/vim-gitgutter' "ÄÚµå º¯°æ ³»¿ª ÇÑ´«¿¡
+Bundle 'vim-airline/vim-airline' "ìƒíƒœë°”ê°„ì§€
+"Bundle 'airblade/vim-gitgutter' "ì½”ë“œ ë³€ê²½ ë‚´ì—­ í•œëˆˆì—
 " vim-scripts repos
 "Bundle 'ctrlpvim/ctrlp.vim'
-"Bundle 'tpope/vim-fugitive'  ±ê¿¬°á
+"Bundle 'tpope/vim-fugitive'  ê¹ƒì—°ê²°
 "
 
 
@@ -91,8 +93,8 @@ filetype plugin indent on     " required!
 
 "========= key mapping ==========
 
-map <F2> v]}zf	"ÄÚµåÀÇ { ºÎºĞ¿¡¼­ ¿µ¿ª Á¢±â
-map <F3> zo		"¿µ¿ª ÆîÄ¡±â
+map <F2> v]}zf	"ì½”ë“œì˜ { ë¶€ë¶„ì—ì„œ ì˜ì—­ ì ‘ê¸°
+map <F3> zo		"ì˜ì—­ í¼ì¹˜ê¸°
 map <F4> :! gcc % -o %<.exe<CR>
 map <c-F4> :!%<.exe<CR>
 
@@ -101,13 +103,13 @@ map <F6> :BufExplorer<cr>
 map <PageUp> <C-U><C-U>
 map <PageDown> <C-D><C-D>
 
-"Vim ³»ÀÇ Ã¢ Å©±â Á¶Àı
+"Vim ë‚´ì˜ ì°½ í¬ê¸° ì¡°ì ˆ
 nmap <s-h> <C-W><
 nmap <s-j> <C-W>-
 nmap <s-k> <C-W>+
 nmap <s-l> <C-W>>
 
-"Vim ³»¿¡¼­ Ã¢ °£ ÀÌµ¿
+"Vim ë‚´ì—ì„œ ì°½ ê°„ ì´ë™
 nmap <c-h> <c-w>h
 nmap <c-j> <c-w>j 
 nmap <c-k> <c-w>k 
