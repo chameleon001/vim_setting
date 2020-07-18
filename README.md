@@ -4,7 +4,7 @@
 
 
 
-
+ㅈㅓㅈㅏㅇㅇㅛㅇ  
 
 "========= default variables setting =========
 set cindent
